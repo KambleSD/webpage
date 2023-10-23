@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1"placeholder="Name"/>
+    <input type="text" id="t2"placeholder="Uid"/>
+    <input type="password" id="t3"placeholder="Password"/>
+    <button onclick=""reg()>REgister</button>
+    <script>
+        function reg(){
+            let name=document.getElementsById("t1").value
+            let Uid=document.getElementsById("t2").value
+            let civil=document.getElementsById("t3").value
+            localStorage.setItem("name",name)
+            localStorage.setItem("Uid",name)
+            localStorage.setItem("civil",name)
+            window.location="/login.html"
+            
+        }
+    </script>
+</body>
+</html>

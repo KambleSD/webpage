@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        .center{
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(54, 149, 117);
+            box-shadow: 0px 0px 3px black;
+        }
+        span{
+            left: 10%;
+            top: 10%;
+            box-shadow: 0px 0px 0px ;
+        }
+        span:nth-child(1){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid orangered;
+  
+            margin: 2rem;
+           
+            left: 12%;
+            top: 14%;
+            animation:demo 3s infinite ;
+            animation-delay: 0.4s;
+        }
+        span:nth-child(2){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid violet;
+  
+            margin: 2rem;
+           
+            left: 12%;
+            top: 16%;
+            animation:demo 4s infinite ;
+            animation-delay: 0.5s;
+        }
+        span:nth-child(3){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid blue;
+  
+            margin: 2rem;
+           
+            left: 12%;
+            top: 18%;
+            animation:demo 3s infinite ;
+            animation-delay: 0.6s;
+        }
+        span:nth-child(4){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid palevioletred;
+  
+            margin: 2rem;
+           
+            left: 12%;
+            top: 20%;
+            animation:demo 3s infinite ;
+            animation-delay: 0.7s;
+        }
+        span:nth-child(5){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid powderblue;
+  
+            margin: 2rem;
+            left: 12%;
+            top: 22%;
+            animation:demo 3s infinite ;
+            animation-delay: 0.8s;
+        }
+        span:nth-child(6){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid burlywood;
+  
+            margin: 2rem;
+            
+            left: 12%;
+            top: 24%;
+            animation:demo 3s infinite ;
+            animation-delay: 0.9s;
+        }
+        span:nth-child(7){
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid green;
+  
+            margin: 2rem;
+           
+            left: 12%;
+            top: 26%;
+            animation:demo 3s infinite ;
+            animation-delay: 1s;
+        }
+        @keyframes demo{
+            0%{
+                transition: 0.7s;
+                transform: rotate(0deg);
+            }
+            20%{
+                transition: 0.7s;
+                transform: rotate(95deg);
+            }
+            50%{
+                transition: 0.7s;
+                transform: rotate(360deg);
+            }
+            100%{
+                transition: 0.7s;
+                transform: rotate(0deg);
+            }
+        }
+    
+    </style>
+    </head>
+    <body>
+        <div class="center">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </body>
+    </html>
