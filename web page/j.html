@@ -1,0 +1,48 @@
+<style>
+    html { font-size:13px; }
+    html.big { font-size:18px; }
+    html.default { font-size:13px; }
+    </style>
+    
+    <a href="#" data-size="big" class="font_resize">bigger</a><br> 
+    <a href="#" data-size="small" class="font_resize">default</a><br> 
+    
+    
+    texttexttexttext<br>  
+    
+    $(function() { 
+      $('.font_resize').on('click', function() {
+        $('html')
+          .attr('class', '')
+          .addClass($(this).data('size'));
+      }); 
+    });
+    $(function() {
+        $('.font_resize').on('click', function() {
+          $(this).text(function(i, text) {
+            return text === "bigger" ? "default" : "bigger";
+          })
+          $('html').toggleClass("small big");
+        });
+      });
+      html {
+        font-size: 13px;
+      }
+      
+      html.big {
+        font-size: 18px;
+      }
+      
+      html.default {
+        font-size: 13px;
+      }
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <a href="#" data-size="big" class="font_resize">bigger</a><br>
+      <br> texttexttexttext
+      $(function() { 
+        $('.font_resize').on('click', function() {
+          $('html')
+            .attr('class', '')
+            .toggleClass('big', !$('html').has('big'));
+        }); 
+      });
